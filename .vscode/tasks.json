@@ -1,0 +1,34 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "Build Library System",
+            "command": "g++",
+            "args": [
+                "-std=c++17",
+                "-Wall",
+                "-I${workspaceFolder}/include",
+                "${workspaceFolder}/src/main.cpp",
+                "${workspaceFolder}/src/Book.cpp",
+                "${workspaceFolder}/src/Date.cpp",
+                "${workspaceFolder}/src/Member.cpp",
+                "${workspaceFolder}/src/Transaction.cpp",
+                "${workspaceFolder}/src/ConfigReader.cpp",
+                "${workspaceFolder}/src/Library.cpp",
+                "-o",
+                "${workspaceFolder}/library_system.exe"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

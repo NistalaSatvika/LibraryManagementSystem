@@ -1,0 +1,3 @@
+# Library Configuration File
+BookFinePerDay=5
+AudiobookFinePerDay=10
